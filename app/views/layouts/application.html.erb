@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>chanl - Read | Write | Interact</title>
+    <title>chanl - read | write | interact</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -17,6 +17,8 @@
       <%= yield %>
       
     </div>
+    
+    <%= render 'layouts/footer' %>
     
   </body>
 </html>
