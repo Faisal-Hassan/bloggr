@@ -1,17 +1,17 @@
 <%= form_for @article do |f| %>
-<p>
+<div class="form-group">
   <%= f.label :title %><br />
-  <%= f.text_field :title %>
-</p>
+  <%= f.text_field :title, placeholder: "Title of story", class: "form-control" %>
+</div>
 
-<p>
+<div class="form-group">
   <%= f.label :description %><br />
-  <%= f.text_area :description %>
-</p>
+  <%= f.text_area :description, placeholder: "Body of story", id: "content", class: "form-control" %>
+</div>
 
-<p>
-  <%= f.submit %>
-</p>
+<div class="form-group">
+  <%= f.submit 'Publish Story', class: "btn btn-primary" %>
+</div>
 
 
 <% end %>
