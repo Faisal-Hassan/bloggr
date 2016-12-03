@@ -35,7 +35,7 @@ $btn-primary-color: #f4f5f9;
 @import "font-awesome";
 
 body {
-  padding-top: 80px;
+  padding-top: 100px;
   background-color: #ffffff;
 }
 
@@ -49,10 +49,6 @@ body {
 #logo {
   font-size: 1.8em;
   font-weight: 600;
-}
-
-#flash {
-  margin-top: -25px;
 }
 
 .jumbotron {
@@ -76,6 +72,11 @@ body {
   color: #181842;
   font-size: 3em;
 }
+
+#flash {
+  margin-top: -25px;
+}
+
 
 #signup {
   padding: 18px 28px;
