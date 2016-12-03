@@ -1,14 +1,11 @@
 <h1 class="text-center">Write a Story</h1>
 
-<% if @article.errors.any? %>
-<h3>The following errors prevented the story from getting created</h3>
-<ul>
-  <% @article.errors.full_messages.each do |msg| %>
-    <li><%= msg %></li>
-  <% end %>
-</ul>
-<% end %>
-
-<%= render 'form' %>
-
-<%= link_to 'Cancel', root_path %>
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <%= render 'form' %>
+      
+      <%= link_to 'Cancel', root_path %>
+    </div>
+  </div>
+</div>

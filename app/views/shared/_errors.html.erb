@@ -1,0 +1,17 @@
+<% if object.errors.any? %>
+  <div class="panel panel-danger">
+    <div class="panel-heading">
+      <h2 class="panel-title">
+        <%= pluralize(object.errors.count, "error") %>
+            prohibited this story from being updated:
+      </h2>
+      <div class="panel-body">
+        <ul>
+          <% object.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  </div>
+<% end %>

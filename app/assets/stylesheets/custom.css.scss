@@ -35,7 +35,7 @@ $btn-primary-color: #f4f5f9;
 @import "font-awesome";
 
 body {
-  padding-top: 100px;
+  padding-top: 80px;
   background-color: #ffffff;
 }
 
@@ -49,6 +49,10 @@ body {
 #logo {
   font-size: 1.8em;
   font-weight: 600;
+}
+
+#flash {
+  margin-top: -25px;
 }
 
 .jumbotron {
@@ -80,39 +84,33 @@ body {
 textarea {
   min-height: 300px;
 }
-footer {
-  padding-top: 5px;
-  border-top: 1px solid #181842;
-  color: black;
-  color: #181842;
-  font-size: 1.2em;
-}
-
-footer a{
-  color: #181842;
-}
 
 footer a:hover {
   color: #a6172d;
 }
-
-footer small {
-  float: left;
-}
-
 
 footer ul {
   float: right;
   list-style: none;
 }
 
-footer ul li {
-  float: left;
-  margin-left: 15px;
+.nav-pills {
+  background-color: #181842;
 }
 
-.navbar-fixed-bottom {
-  padding: 0 20px;
-  padding-top: 15px;
+.nav-pills > li > a:hover {
+  border-radius: 0;
 }
 
+.nav > li > a:hover, .nav > li > a:focus {
+  background-color: #d3e0f7;
+  border-radius: 0;
+}
+
+a#by-tab {
+  color: #ffffff;
+}
+
+a#by-tab:hover {
+  color: #181842;
+}

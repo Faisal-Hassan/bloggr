@@ -1,14 +1,10 @@
-<h1>Edit existing story</h1>
+<h1 class="text-center">Edit Story</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <%= render 'form' %>
 
-<% if @article.errors.any? %>
-<h3>The following errors prevented the story from getting updated</h3>
-<ul>
-  <% @article.errors.full_messages.each do |msg| %>
-    <li><%= msg %></li>
-  <% end %>
-</ul>
-<% end %>
-
-<%= render 'form' %>
-
-<%= link_to 'Back', article_path %>
+      <%= link_to 'Back', article_path %>
+    </div>
+  </div>
+</div>
