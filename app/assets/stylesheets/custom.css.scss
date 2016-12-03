@@ -23,10 +23,18 @@ $navbar-default-toggle-icon-bar-bg: #ffffff;
 $navbar-default-toggle-hover-bg: #d3e0f7;
 $navbar-default-link-hover-color: #d3e0f7;
 $jumbotron-bg: #d3e0f7;
+$well-bg: #ebf1fb;
+$well-border: #ffffff;
 $btn-default-bg: #ffffff;
 $btn-default-color: #181842;
 $btn-primary-bg: #181842;
 $btn-primary-color: #f4f5f9;
+$btn-info-bg: #005f6b;
+$btn-info-color: #ffffff;
+$btn-success-bg: #08182b;
+$btn-success-color: #ffffff;
+$btn-warning-bg: #a6172d;
+$btn-warning-color: #ffffff;
 
 
 @import "bootstrap-sprockets";
@@ -52,7 +60,7 @@ body {
 }
 
 .jumbotron {
-	max-width:2400px;
+	max-width: 2400px;
 	min-height: 500px;
 	margin: 20px auto;
 	padding-top: 30px;
@@ -114,4 +122,12 @@ a#by-tab {
 
 a#by-tab:hover {
   color: #181842;
+}
+
+#show {
+  padding: 20px 30px;
+}
+
+#show-btn {
+  padding-top: 10px;
 }
