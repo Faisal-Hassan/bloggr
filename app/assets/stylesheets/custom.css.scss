@@ -45,6 +45,7 @@ $btn-warning-color: #ffffff;
 body {
   padding-top: 100px;
   background-color: #ffffff;
+  color: #181842;
 }
 
 .navbar-default {
@@ -91,7 +92,7 @@ body {
 }
 
 textarea {
-  min-height: 300px;
+  min-height: 350px;
 }
 
 footer a:hover {
@@ -124,10 +125,44 @@ a#by-tab:hover {
   color: #181842;
 }
 
+.form-title {
+  font-size: 1.2em;
+}
+
+.form-content {
+  font-size: 1.3em;
+}
+
+.show-title {
+  text-transform: capitalize;
+}
 #show {
   padding: 20px 30px;
 }
 
 #show-btn {
   padding-top: 10px;
+}
+
+#index {
+  padding-bottom: 10px;
+}
+
+#index-btn {
+  padding-bottom: 5px;
+}
+
+.story-title {
+  padding: 5px auto;
+  font-size: 1.4em;
+  text-transform: capitalize;
+  padding-bottom: 5px;
+}
+
+.story-title a {
+  color: #181842;
+}
+
+.story-body {
+  font-size: 1.2em;
 }

@@ -2,13 +2,13 @@
 
 <%= form_for @article do |f| %>
 <div class="form-group">
-  <%= f.label :title %><br />
-  <%= f.text_field :title, placeholder: "Title of story", class: "form-control" %>
+  <%= f.label :title, class: "form-title" %><br />
+  <%= f.text_field :title, placeholder: "Title of story", class: "form-control form-content" %>
 </div>
 
 <div class="form-group">
-  <%= f.label :description %><br />
-  <%= f.text_area :description, placeholder: "Body of story", id: "content", class: "form-control" %>
+  <%= f.label :description, class: "form-title" %><br />
+  <%= f.text_area :description, placeholder: "Body of story", id: "content", class: "form-control form-content" %>
 </div>
 
 <div class="form-group">
