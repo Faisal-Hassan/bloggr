@@ -1,0 +1,25 @@
+<% object.each do |article| %>
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <div class="well well-lg">
+          <div class="story-title">
+            <%= link_to article.title, article_path(article)  %>
+          </div>
+          <div class="story-body">
+              <%= truncate(article.description, length: 180) %><br />
+              <div id="timestamp">
+	              <small>Written by: <%= article.user.username %>,
+	               	<%= time_ago_in_words(article.created_at) %> ago |
+	               	last updated: <%= time_ago_in_words(article.updated_at) %> ago
+	              </small>
+            	</div>
+            <div id="index-btn">
+              <%= link_to 'Edit', edit_article_path(article), class: "btn btn-xs btn-info" %> <strong>|</strong>
+              <%= link_to 'Delete', article_path(article), method: :delete, data: { confirm: 'Are you sure?' },
+                  class: "btn btn-xs btn-warning"  %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <% end %>

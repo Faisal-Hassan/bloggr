@@ -1,0 +1,8 @@
+<h1 class="text-center" id="show-title"><%= @user.username %></h1>
+<div class="row">
+  <div class="col-md-6 col-md-offset-3 text-center gravatar">
+    <%= gravatar_for @user, size: 150 %>
+  </div>
+</div>
+
+<%= render 'articles/article', object: @user.articles %>
