@@ -126,11 +126,11 @@ a#by-tab:hover {
 }
 
 .form-title {
-  font-size: 1.2em;
+  font-size: 1.4em;
 }
 
 .form-content {
-  font-size: 1.3em;
+  font-size: 1.5em;
 }
 
 .show-title {
@@ -140,21 +140,30 @@ a#by-tab:hover {
   padding: 20px 30px;
 }
 
+#show h4 {
+  font-size: 1.4em;
+}
+
 #show-btn {
   padding-top: 10px;
 }
 
-#index {
+#timestamp {
   padding-bottom: 10px;
+  padding-top: 10px;
+  
 }
 
+#timestamp small {
+  font-size: 70%;
+}
 #index-btn {
   padding-bottom: 5px;
 }
 
 .story-title {
   padding: 5px auto;
-  font-size: 1.4em;
+  font-size: 1.5em;
   text-transform: capitalize;
   padding-bottom: 5px;
 }
@@ -164,5 +173,5 @@ a#by-tab:hover {
 }
 
 .story-body {
-  font-size: 1.2em;
+  font-size: 1.4em;
 }
