@@ -7,6 +7,9 @@ gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 gem 'puma', '~> 3.0'
 # Normalize.css gem
 gem 'normalize-rails', '~> 4.1', '>= 4.1.1'
+# Pagination gems
+gem 'will_paginate', '~> 3.1.0'
+gem 'bootstrap-will_paginate', '~> 0.0.10'
 # Bootstrap gem
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 # Use SCSS for stylesheets
