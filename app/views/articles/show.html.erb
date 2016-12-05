@@ -16,10 +16,13 @@
     <div class="well"  id="show">
       <h4><%= simple_format(@article.description) %></h4>
       <div id="show-btn">
-        <%= link_to 'Edit', edit_article_path(@article), class: "btn btn-xs btn-info" %> <strong>|</strong>
-        <%= link_to 'Delete', article_path(@article), method: :delete, data: { confirm: 'Are you sure?' },
-          class: "btn btn-xs btn-warning"  %> <strong>|</strong>
+        <% if logged_in? && current_user == @article.user %>
+          <%= link_to 'Edit', edit_article_path(@article), class: "btn btn-xs btn-info" %> <strong>|</strong>
+          <%= link_to 'Delete', article_path(@article), method: :delete, data: { confirm: 'Are you sure?' },
+              class: "btn btn-xs btn-warning"  %> <strong>|</strong>
+        <% end %>
         <%= link_to 'Back', articles_path, class: "btn btn-xs btn-success" %>
+        
       </div>
       
       
