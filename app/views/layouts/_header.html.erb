@@ -38,9 +38,12 @@
       </form>
       <ul class="nav navbar-nav navbar-right">
       	<li><%= link_to "New Story", new_article_path %></li>
+      	<% if logged_in? %>
+	        <li><%= link_to 'Logout', logout_path, method: :delete %></li>
+      	<% else %>
         <li><%= link_to 'Login', login_path %></li>
         <li><%= link_to 'Sign up', signup_path %></li>
-        <li><%= link_to 'Logout', logout_path, method: :delete %></li>
+				<% end %>
         
       </ul>
     </div><!-- /.navbar-collapse -->
