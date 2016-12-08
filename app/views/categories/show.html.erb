@@ -1,5 +1,10 @@
 <h1 class="text-center"><%= "Genre: " + @category.name %></h1>
-
+<% if logged_in? and current_user.admin? %>
+  <div class="row text-center">
+      <span class="badge" id="edit-btn"><%= link_to "Edit Genre Name", edit_category_path(@category) %></span>
+  </div>
+<% end %>
+  
 <%= render 'articles/article', object: @category_articles %>
 
 <div class="text-center">

@@ -1,0 +1,18 @@
+<%= render 'shared/errors', object: @category  %> 
+<div class="row">
+  <div class="col-md-8 col-md-offset-2">
+    <%= form_for @category do |f| %>
+    
+    <div class="well">
+      <div class="form-group">
+        <%= f.label :name, class: "form-title" %><br />
+        <%= f.text_field :name, placeholder: "Genre", class: "form-control auth" %>
+      </div>
+      
+      <div class="form-group">
+        <%= f.submit(@category.new_record? ? "Add Genre" : "Update Genre", class: "btn btn-primary") %>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>
