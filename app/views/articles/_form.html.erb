@@ -12,6 +12,12 @@
   </div>
   
   <div class="form-group">
+    <%= f.collection_check_boxes :category_ids, Category.all, :id, :name do |cb| %>
+      <%= cb.label(class: "checkbox-inline chckbox") {cb.check_box(class: "checkbox") + cb.text} %>
+    <% end %>
+  </div>
+  
+  <div class="form-group">
     <%= f.submit(@article.new_record? ? "Publish Story" : "Update Story", class: "btn btn-primary") %>
   </div>
   <% end %>
