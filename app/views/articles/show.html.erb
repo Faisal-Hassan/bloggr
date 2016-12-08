@@ -15,6 +15,9 @@
     </ul>
     <div class="well"  id="show">
       <h4><%= simple_format(@article.description) %></h4>
+      <% if @article.categories.any? %>
+        <p>Genres&nbsp;:&nbsp;<%= render @article.categories %></p>
+      <% end %>
       <div id="show-btn">
         <% if logged_in? && (current_user == @article.user || current_user.admin?) %>
           <%= link_to 'Edit', edit_article_path(@article), class: "btn btn-xs btn-info" %> <strong>|</strong>

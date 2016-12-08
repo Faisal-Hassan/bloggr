@@ -232,3 +232,20 @@ a#by-tab:hover {
   color: #181842;
 }
 
+.badge {
+  background-color: #181842;
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 2;
+  margin-left: 5px;
+  padding: 2px 8px;
+  border-radius: 0px;
+}
+
+.badge a {
+  color: #ffffff;
+}
+
+.chckbox input {
+  width: auto !important;
+}
