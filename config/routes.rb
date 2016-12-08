@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  resources :categories, except: [:destroy]
+  resources :categories, :path => 'genres', except: [:destroy]
   
   delete 'logout',	to: 'sessions#destroy'
 	post 'login',     to: 'sessions#create'
@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   
   get 'signup', 		to: 'users#new' 
   
-  resources :articles
+  resources :articles, :path => 'stories'
   
   get 'about',			to: 'pages#about'
   
