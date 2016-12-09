@@ -19,5 +19,15 @@
     
     <%= render 'layouts/footer' %>
   
+  
+  <script>
+		$(document).ready(function() {
+      setTimeout(function(){
+      $('#flash').fadeOut("slow", function() {
+        $(this).remove();
+        })
+      }, 4500);
+    });
+	</script>
   </body>
 </html>
