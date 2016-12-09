@@ -29,6 +29,9 @@ gem 'bcrypt', '~> 3.1.7'
 #  Paperclip gem for image uploads
 gem "paperclip", "~> 5.0.0"
 
+# Image upload to S3
+gem 'aws-sdk', '~> 2'
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
