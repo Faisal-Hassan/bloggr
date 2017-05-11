@@ -12,4 +12,20 @@ class User < ActiveRecord::Base
             format: { with: VALID_EMAIL_REGEX }
             
   has_secure_password
+  
+  # Creates a new heart row with article_id and user_id
+  def heart!(article)
+    self.hearts.create!(article_id: article.id)
+  end
+  
+  # Destroys a heart with matching article_id and user_id
+  def unheart!(article)
+    heart = self.hearts.find_by_article_id(article.id)
+    heart.destroy!
+  end
+  
+  # Returns true or false if an article is hearted by user
+  def heart!(article)
+    self.hearts.find_by_article_id(article.id)
+  end
 end

@@ -1,6 +1,6 @@
 class Article < ActiveRecord::Base
   belongs_to :user
-  has_many :hearts, dependents: :destroy
+  has_many :hearts, dependent: :destroy
   has_many :article_categories
   has_many :categories, through: :article_categories
   has_attached_file :image, styles: { large: "600x600", medium: "300x300>", thumb: "150x150#" }, default_url: "/images/:style/missing.png"
