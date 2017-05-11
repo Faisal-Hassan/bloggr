@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :hearts
   resources :categories, :path => 'genres', except: [:destroy]
   
   delete 'logout',	to: 'sessions#destroy'
