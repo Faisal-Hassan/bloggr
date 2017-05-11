@@ -1,0 +1,5 @@
+<% if current_user.heart?(article) %>
+  <%= button_to "Unheart", unheart_path(article_id: article.id), remote: true, method: :delete  %>
+<% else %>
+  <%= button_to "Heart", heart_path(article_id: article.id), remote: true  %>
+<% end %>

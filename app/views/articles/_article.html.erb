@@ -5,6 +5,9 @@
           <div class="story-title">
             <%= link_to article.title, article_path(article)  %>
           </div>
+          <%= div_for article do %>
+             <%= render partial: "hearts/button", locals: { article: article } %>
+          <% end %>
           <div class="story-body">
             <%= truncate(article.description, length: 180) %><br />
             <div id="timestamp">
