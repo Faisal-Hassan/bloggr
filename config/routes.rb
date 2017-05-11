@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
 
   resources :hearts
+  match 'heart', to: 'hearts#heart', via: :post
+  
+  math 'unheart', to: 'hearts#unheart', via: :delete
+  
   resources :categories, :path => 'genres', except: [:destroy]
   
   delete 'logout',	to: 'sessions#destroy'
